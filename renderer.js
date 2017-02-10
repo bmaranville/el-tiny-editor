@@ -114,6 +114,8 @@ tinymce.PluginManager.add('menusave', function(editor, url) {
     });
 });
 
+tinymce.baseURL = "node_modules/tinymce";
+
 tinymce.init({ 
   selector:'div.tinymce-full',
   height: "100%",
