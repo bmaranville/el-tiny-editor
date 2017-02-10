@@ -1,0 +1,41 @@
+{
+  "name": "el-tiny-editor",
+  "version": "1.0.0",
+  "description": "An electron wrapper for TinyMCE",
+  "main": "main.js",
+  "repository": "https://github.com/bmaranville/el-tiny-editor",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "dependencies": {
+    "tinymce": "^4.5.3",
+    "js-beautify": "^1.6.8"
+  },
+  "devDependencies": {
+    "dist": "^0.1.2",
+    "electron": "^1.4.1",
+    "electron-builder": "^13.3.2",
+    "js-beautify": "^1.6.8",
+    "tinymce": "^4.5.3"
+  },
+  "build": {
+    "appId": "Electron TinyMCE",
+    "mac": {
+      "category": "html editor"
+    },
+    "win": {
+    },
+    "asar": true
+  },
+  "scripts": {
+    "pack": "build --dir",
+    "dist": "build",
+    "start": "electron ."
+  }
+}
